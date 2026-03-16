@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-map_size = 10 #Km²
+map_size = 10 #100 Km²
 
 towers = np.array([
     [2, 8],  # Tower A 
