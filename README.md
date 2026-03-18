@@ -1,6 +1,7 @@
 # Cell Tower Load Optimization Lab
 
-![AI](../../../Pictures/Screenshot_2026-03-18_21_51_34.png)
+![AI](Screenshot_2026-03-18_21_51_34.png)
+![Heuristic](Screenshot_2026-03-18_21_50_50.png)
 
 **Objective:** Simulating user distribution to understand Handover and Load Balancing.
 
