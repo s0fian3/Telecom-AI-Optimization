@@ -22,7 +22,7 @@ for user in user_locations:
         final_assignments.append(-1) 
 
 # 3. Visualization
-plt.figure(figsize=(10, 7))
+plt.figure(figsize=(10, 6))
 for i, t in enumerate(towers):
     color = 'red' if tower_load[i] >= tower_capacity else 'green'
     plt.scatter(t[0], t[1], c=color, marker='^', s=400, label=f'Tower {i} (Load: {tower_load[i]}/{tower_capacity})')
