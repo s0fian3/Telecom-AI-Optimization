@@ -27,7 +27,7 @@ the Heuristic focuses on Hard Constraints (Capacity) while the AI focuses on Net
 
 **Theoretical Concepts Mastered**
 - #### Voronoi Partitioning & Cell Boundaries
- By using K-Means clustering, the network naturally performs Voronoi Tessellation. This mathematically defines the "service area" of each tower. In a real 5G deployment, this allows for dynamic sectorization where cell boundaries shift based on where users actually are, rather than remaining as static hexagons.
+    By using K-Means clustering, the network naturally performs Voronoi Tessellation. This mathematically defines the "service area" of each tower. In a real 5G deployment, this allows for dynamic sectorization where cell boundaries shift based on where users actually are, rather than remaining as static hexagons.
 - #### Handover Hysteresis & The "Ping-Pong" Effect
 - third
 
