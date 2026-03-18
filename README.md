@@ -2,6 +2,7 @@
 
 ![AI](assets/Screenshot_2026-03-18_21_51_34.png)
 ![Heuristic](assets/Screenshot_2026-03-18_21_50_50.png)
+
 the Heuristic focuses on Hard Constraints (Capacity) while the AI focuses on Network Stability (Handover Minimization).
 
 ### 🛠️ Getting Started
@@ -23,5 +24,11 @@ the Heuristic focuses on Hard Constraints (Capacity) while the AI focuses on Net
 **Logic:**
 1. Implemented a capacity and distance-constrained assignment algorithm.
 2. Then Modified it to be AI-driven. The AI ensures there are a minimum of handovers to optimize the network by calculating the centroid of the clusters on each frame.
+
+**Theoretical Concepts Mastered**
+- #### Voronoi Partitioning & Cell Boundaries
+ By using K-Means clustering, the network naturally performs Voronoi Tessellation. This mathematically defines the "service area" of each tower. In a real 5G deployment, this allows for dynamic sectorization where cell boundaries shift based on where users actually are, rather than remaining as static hexagons.
+- #### Handover Hysteresis & The "Ping-Pong" Effect
+- third
 
 
