@@ -1,7 +1,15 @@
 # Cell Tower Load Optimization Lab
 
-![AI](Screenshot_2026-03-18_21_51_34.png)
-![Heuristic](Screenshot_2026-03-18_21_50_50.png)
+![AI](assets/Screenshot_2026-03-18_21_51_34.png)
+![Heuristic](assets/Screenshot_2026-03-18_21_50_50.png)
+the Heuristic focuses on Hard Constraints (Capacity) while the AI focuses on Network Stability (Handover Minimization).
+
+### 🛠️ Getting Started
+1. Clone the repository.
+2. Create a virtual environment: `python -m venv .venv`
+3. Activate it: `source .venv/bin/activate`
+4. Install dependencies: `pip install -r requirements.txt`
+5. Run the simulation: `python scripts/AI_Dynamic_Handover.py`
 
 **Objective:** Simulating user distribution to understand Handover and Load Balancing.
 
@@ -15,3 +23,5 @@
 **Logic:**
 1. Implemented a capacity and distance-constrained assignment algorithm.
 2. Then Modified it to be AI-driven. The AI ensures there are a minimum of handovers to optimize the network by calculating the centroid of the clusters on each frame.
+
+
