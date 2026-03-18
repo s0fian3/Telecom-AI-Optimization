@@ -3,7 +3,6 @@
 ![AI](assets/Screenshot_2026-03-18_21_51_34.png)
 ![Heuristic](assets/Screenshot_2026-03-18_21_50_50.png)
 
-the Heuristic focuses on Hard Constraints (Capacity) while the AI focuses on Network Stability (Handover Minimization).
 
 ### 🛠️ Getting Started
 1. Clone the repository.
@@ -24,6 +23,7 @@ the Heuristic focuses on Hard Constraints (Capacity) while the AI focuses on Net
 **Logic:**
 1. Implemented a capacity and distance-constrained assignment algorithm.
 2. Then Modified it to be AI-driven. The AI ensures there are a minimum of handovers to optimize the network by calculating the centroid of the clusters on each frame.
+3. The Heuristic focuses on Hard Constraints (Capacity) while the AI focuses on Network Stability (Handover Minimization).
 
 **Theoretical Concepts Mastered**
 - #### Voronoi Partitioning & Cell Boundaries
