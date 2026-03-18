@@ -1,7 +1,11 @@
 # Cell Tower Load Optimization Lab
 
-![AI](assets/Screenshot_2026-03-18_21_51_34.png)
-![Heuristic](assets/Screenshot_2026-03-18_21_50_50.png)
+### 📊 Visual Comparison: Heuristic vs. AI
+
+| **Heuristic Approach** | **AI (K-Means) Approach** |
+| :---: | :---: |
+| ![Heuristic Plot](scripts/heuristic_plot.png) | ![AI Plot](scripts/ai_plot.png) |
+| *Managing Capacity & Constraints* | *Optimizing Handover Stability* |
 
 
 ### 🛠️ Getting Started
