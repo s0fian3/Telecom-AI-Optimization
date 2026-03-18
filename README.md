@@ -29,6 +29,9 @@ the Heuristic focuses on Hard Constraints (Capacity) while the AI focuses on Net
 - #### Voronoi Partitioning & Cell Boundaries
     By using K-Means clustering, the network naturally performs Voronoi Tessellation. This mathematically defines the "service area" of each tower. In a real 5G deployment, this allows for dynamic sectorization where cell boundaries shift based on where users actually are, rather than remaining as static hexagons.
 - #### Handover Hysteresis & The "Ping-Pong" Effect
-- third
+    A major challenge in high-speed mobility is the Ping-Pong Effect, where a user at the edge of two cells rapidly switches back and forth, wasting signaling resources.
+        - This AI model demonstrates Handover Hysteresis, it doesn't switch the user immediately just because they are 1 meter closer to a new pylon.
+        - By maintaining cluster centroids, the AI ensures a "Handover Margin," prioritizing a stable connection over aggressive switching.
+        
 
 
