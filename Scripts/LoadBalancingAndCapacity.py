@@ -56,7 +56,7 @@ def update_network():
 plt.ion()
 for step in range(300):
     update_network()
-    ax.set_title(f"Dynamic Heuristic Load Balancing - Step {step}")
+    ax.set_title(f"Dynamic Heuristic Distance+Capacity Handover")
     plt.pause(0.1)
 
 plt.ioff()
