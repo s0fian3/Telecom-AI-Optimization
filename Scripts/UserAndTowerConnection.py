@@ -21,7 +21,6 @@ for user in user_locations:
     if not assigned:
         final_assignments.append(-1) 
 
-# 3. Visualization
 plt.figure(figsize=(10, 6))
 for i, t in enumerate(towers):
     color = 'red' if tower_load[i] >= tower_capacity else 'green'
