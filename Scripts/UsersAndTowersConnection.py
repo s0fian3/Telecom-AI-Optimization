@@ -1,5 +1,4 @@
 from UsersAndTowersMap import *
-from UserAndTowerConnection import *
 
 tower_capacity = 10
 tower_load = [0, 0, 0, 0] 

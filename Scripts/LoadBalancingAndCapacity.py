@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 towers = np.array([[2, 8], [5, 2], [8, 7], [6, 5]])
-num_users = 50
+num_users = 30
 tower_capacity = 12 
 user_locs = np.random.rand(num_users, 2) * 10
 
