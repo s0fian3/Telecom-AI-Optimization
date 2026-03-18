@@ -21,7 +21,7 @@ lines = [ax.plot([], [], color='gray', alpha=0.2, zorder=1)[0] for _ in range(nu
 plt.title("Dynamic AI Distance Handover")
 
 for _ in range(500): 
-    user_locs += np.random.normal(0, 0.05, size=(num_users, 2)) 
+    user_locs += np.random.normal(0, 0.2, size=(num_users, 2)) 
     user_locs = np.clip(user_locs, 0, 10)
     
     # AI Logic
@@ -39,6 +39,6 @@ for _ in range(500):
         lines[i].set_data([user_locs[i, 0], towers[tower_idx, 0]], 
                          [user_locs[i, 1], towers[tower_idx, 1]])
     
-    plt.pause(0.1) 
+    plt.pause(0.15) 
 
 plt.show()

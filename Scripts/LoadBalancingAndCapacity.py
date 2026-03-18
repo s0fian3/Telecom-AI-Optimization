@@ -19,7 +19,7 @@ lines = [ax.plot([], [], alpha=0.15, linewidth=1)[0] for _ in range(num_users)]
 
 def update_network():
     global user_locs
-    user_locs += np.random.normal(0, 0.08, size=(num_users, 2))
+    user_locs += np.random.normal(0, 0.2, size=(num_users, 2))
     user_locs = np.clip(user_locs, 0, 10)
     
     tower_load = [0] * len(towers)
@@ -57,7 +57,7 @@ plt.ion()
 for step in range(300):
     update_network()
     ax.set_title(f"Dynamic Heuristic Distance+Capacity Handover")
-    plt.pause(0.1)
+    plt.pause(0.15)
 
 plt.ioff()
 plt.show()
