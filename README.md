@@ -1,41 +1,33 @@
 # Cell Tower Load Optimization Lab
 
-### 📊 Visual Comparison: Heuristic vs. AI
+### 📊 Network Simulation in Action
 
-| **Heuristic Approach** | **AI (K-Means) Approach** |
-| :---: | :---: |
-| ![Heuristic Plot](assets/heuristic_plot.png) | ![AI Plot](assets/ai_plot.png) |
-| *Managing Capacity & Constraints* | *Optimizing Handover Stability* |
-
+| **Dynamic Load Balancing** |
+| :---: |
+| ![Heuristic Plot](assets/heuristic_plot.png) |
+| *Real-time assignment showing capacity-constrained handovers* |
 
 ### 🛠️ Getting Started
-1. Clone the repository.
+1. Clone the repository: `git clone https://github.com/s0fian3/Network-Load-Optimization.git`
 2. Create a virtual environment: `python -m venv .venv`
 3. Activate it: `source .venv/bin/activate`
 4. Install dependencies: `pip install -r requirements.txt`
-5. Run the simulation: `python scripts/AI_Dynamic_Handover.py`
+5. Run the simulation: `python scripts/Heuristic_Capacity_Handover.py`
 
 **Objective:** Simulating user distribution to understand Handover and Load Balancing.
 
-**Tools:** Python, NumPy, Matplotlib, Scikit-learn, Virtual Environments.
+**Tools:** Python, NumPy, Matplotlib, Scikit-learn, Virtual Environments. 
 
-**Features:** 
-- Implemented Distance-Based Cell Association
-- Calculated "Average Connection Distance" as a proxy for signal quality
-- Load Balancing & Congestion Management.
+**Features & Logic:** 
+    - **Distance-Based Association:** Users automatically seek the nearest pylon to maximize *RSRP* (Reference Signal Received Power).
+    - **Capacity-Aware Rerouting:** Implements a "failover" logic. If the closest tower reaches its *MAX_CAPACITY*, the system automatically scans for the next best available pylon, preventing cell congestion.
+    - **Handover Analytics:** Tracks the frequency of connection switches as users move through the environment.
+    - **Congestion Monitoring:** Real-time calculation of "Blocked" users who cannot find an available slot within the network.
 
-**Logic:**
-1. Implemented a capacity and distance-constrained assignment algorithm.
-2. Then Modified it to be AI-driven. The AI ensures there are a minimum of handovers to optimize the network by calculating the centroid of the clusters on each frame.
-3. The Heuristic focuses on Hard Constraints (Capacity) while the AI focuses on Network Stability (Handover Minimization).
+**Key Performance Indicators (KPIs)**
+    - **Average Connection Distance:** A proxy for Path Loss, lower values indicate better overall signal quality across the network.
+    - **Handover Count:** Measures the stability of the association logic.
+    - **Congestion Rate:** The percentage of users dropped or "Out of Service" when total demand exceeds the infrastructure's capacity.
 
-**Theoretical Concepts Mastered**
-- #### Voronoi Partitioning & Cell Boundaries
-    By using K-Means clustering, the network naturally performs Voronoi Tessellation. This mathematically defines the "service area" of each tower. In a real 5G deployment, this allows for dynamic sectorization where cell boundaries shift based on where users actually are, rather than remaining as static hexagons.
-- #### Handover Hysteresis & The "Ping-Pong" Effect
-    A major challenge in high-speed mobility is the Ping-Pong Effect, where a user at the edge of two cells rapidly switches back and forth, wasting signaling resources.
-        - This AI model demonstrates Handover Hysteresis, it doesn't switch the user immediately just because they are 1 meter closer to a new pylon.
-        - By maintaining cluster centroids, the AI ensures a "Handover Margin," prioritizing a stable connection over aggressive switching.
-        
-
-
+**📝 Project Conclusion**
+The simulation proves that while distance is the primary factor in network quality, Capacity Management is the ultimate governor of user experience. This heuristic approach provides a stable, predictable baseline for managing high-density traffic in urban environments.
