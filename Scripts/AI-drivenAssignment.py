@@ -35,7 +35,6 @@ for _ in range(500):
     # Update Lines
     for i in range(num_users):
         tower_idx = assignments[i]
-        # Draw line from user current pos to their assigned tower
         lines[i].set_data([user_locs[i, 0], towers[tower_idx, 0]], 
                          [user_locs[i, 1], towers[tower_idx, 1]])
     
