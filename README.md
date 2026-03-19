@@ -19,7 +19,7 @@
 **Objective:** Simulating user distribution to understand Handover and Load Balancing.
 
 
-**Tools:** Python, NumPy, Matplotlib, Scikit-learn, Virtual Environments. 
+**Tools:** Python, NumPy, Matplotlib, Virtual Environments. 
 
 
 **Features & Logic:** 
