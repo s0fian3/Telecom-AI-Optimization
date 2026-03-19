@@ -87,7 +87,7 @@ def update_network(_):
 plt.ion()
 for step in range(100):
     avg_d, total_h, cong = update_network(step)
-    ax.set_title(f"Network Lab | Step: {step} | Avg Dist: {avg_d:.2f} Km | Handovers: {total_h} | Congestion: {cong:.1f}%", fontsize=11)
+    ax.set_title(f"Cell Network SIM | Step: {step} | Avg Dist: {avg_d:.2f} Km | Handovers: {total_h} | Congestion: {cong:.1f}%", fontsize=11)
     plt.pause(0.3)
 
 plt.ioff()
