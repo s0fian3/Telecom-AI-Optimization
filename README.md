@@ -4,7 +4,7 @@
 
 | **Heuristic Approach** | **AI (K-Means) Approach** |
 | :---: | :---: |
-| ![Heuristic Plot]() | ![AI Plot](assets/ai_plot.png) |
+| ![Heuristic Plot](assets/heuristic_plot.png) | ![AI Plot](assets/ai_plot.png) |
 | *Managing Capacity & Constraints* | *Optimizing Handover Stability* |
 
 
