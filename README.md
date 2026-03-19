@@ -5,7 +5,7 @@
 | **Dynamic Load Balancing** |
 | :---: |
 | ![Heuristic Plot](assets/Heuristic_plot.png) |
-| *Real-time assignment showing capacity-constrained handovers* |
+| *Real-time assignment showing capacity & range-constrained handovers* |
 
 ### 🛠️ Getting Started
 1. Clone the repository: `git clone https://github.com/s0fian3/Network-Load-Optimization.git`
