@@ -23,16 +23,16 @@
 
 
 **Features & Logic:** 
-    - **Distance-Based Association:** Users automatically seek the nearest pylon to maximize *RSRP* (Reference Signal Received Power).
-    - **Capacity-Aware Rerouting:** Implements a "failover" logic. If the closest tower reaches its *MAX_CAPACITY*, the system automatically scans for the next best available pylon, preventing cell congestion.
-    - **Handover Analytics:** Tracks the frequency of connection switches as users move through the environment.
-    - **Congestion Monitoring:** Real-time calculation of "Blocked" users who cannot find an available slot within the network.
+- **Distance-Based Association:** Users automatically seek the nearest pylon to maximize *RSRP* (Reference Signal Received Power).
+- **Capacity-Aware Rerouting:** Implements a "failover" logic. If the closest tower reaches its *MAX_CAPACITY*, the system automatically scans for the next best available pylon, preventing cell congestion.
+- **Handover Analytics:** Tracks the frequency of connection switches as users move through the environment.
+- **Congestion Monitoring:** Real-time calculation of "Blocked" users who cannot find an available slot within the network.
 
 
 **Key Performance Indicators (KPIs)**
-    - **Average Connection Distance:** A proxy for Path Loss, lower values indicate better overall signal quality across the network.
-    - **Handover Count:** Measures the stability of the association logic.
-    - **Congestion Rate:** The percentage of users dropped or "Out of Service" when total demand exceeds the infrastructure's capacity.
+- **Average Connection Distance:** A proxy for Path Loss, lower values indicate better overall signal quality across the network.
+- **Handover Count:** Measures the stability of the association logic.
+- **Congestion Rate:** The percentage of users dropped or "Out of Service" when total demand exceeds the infrastructure's capacity.
 
 
 **📝 Project Conclusion**
