@@ -4,7 +4,7 @@
 
 | **Dynamic Load Balancing** |
 | :---: |
-| ![Heuristic Plot](assets/heuristic_plot.png) |
+| ![Heuristic Plot](assets/Heuristic_plot.png) |
 | *Real-time assignment showing capacity-constrained handovers* |
 
 ### 🛠️ Getting Started
